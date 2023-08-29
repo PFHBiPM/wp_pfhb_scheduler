@@ -1,0 +1,33 @@
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 1rem auto;
+    gap: 1rem;
+    width: max-content;
+    label{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        input[type=submit]{
+            max-width: max-content;
+            padding: .5rem;
+        }
+    }
+}
+.data-list.events-list{
+    display: table;
+    // flex-direction: column;
+    li{
+        display: table-row;
+        div,a{
+            display: table-cell;
+            padding: .25rem;
+        }
+        &:first-child{
+            font-weight: bold;
+
+        }
+    }
+}
